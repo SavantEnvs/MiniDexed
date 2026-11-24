@@ -1,0 +1,5 @@
+USER admin
+PASS wrong
+USER other
+PASS minidexed
+PASS x

@@ -1,0 +1,9 @@
+project: savantenvs/MiniDexed
+target: fuzz_performance_dir
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_performance_dir/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_performance_dir
+    libfuzzer: true
+    timeout: 10

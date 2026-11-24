@@ -1,0 +1,9 @@
+USER admin
+PASS minidexed
+CWD /SD
+TYPE A
+PORT 10,0,0,1,4,1
+RETR minidexed.ini
+PASV
+STOR performance/000002_New.ini
+RETR /SD/performance/000002_New.ini

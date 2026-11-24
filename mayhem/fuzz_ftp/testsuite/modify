@@ -1,0 +1,9 @@
+USER admin
+PASS minidexed
+CWD /SD
+MKD banks
+RNFR performance.ini
+RNTO banks/perf.ini
+DELE banks/perf.ini
+RMD banks
+DELE nosuch

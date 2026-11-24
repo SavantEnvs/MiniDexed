@@ -1,0 +1,12 @@
+USER admin
+PASS minidexed
+SYST
+PWD
+CWD SD
+CWD performance
+PWD
+CDUP
+CWD /SD/sysex/voice
+CWD ..
+PWD
+NOOP

@@ -1,0 +1,9 @@
+project: savantenvs/MiniDexed
+target: fuzz_serial_midi
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_serial_midi/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_serial_midi
+    libfuzzer: true
+    timeout: 10
